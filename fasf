@@ -1,0 +1,35 @@
+ESP:Toggle(true)
+ESP.Boxes = false 
+ESP.Names = false
+ESP.Tracers = false 
+ESP.TeamColor = false
+ESP.FaceCamera = false
+
+firsttime = false 
+
+Vis:AddToggle("Boxes", nil, function(t)
+    if firsttime == false then 
+		ESP.Boxes = t 
+	end
+end)
+Vis:AddToggle("Names", nil, function(t)
+    if firsttime == false then 
+		ESP.Names = t 
+	end
+end)
+Vis:AddToggle("Tracers", nil, function(t)
+    if firsttime == false then 
+		ESP.Tracers = t 
+	end
+end)
+Vis:AddSeperator("")
+Vis:AddToggle("Team Color", nil, function(t)
+    if firsttime == false then 
+		ESP.TeamColor = t 
+	end
+end)
+Vis:AddToggle("Face Camera", nil, function(t)
+    if firsttime == false then 
+		ESP.FaceCamera = t 
+	end
+end)
